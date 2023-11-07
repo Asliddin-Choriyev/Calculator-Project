@@ -1,63 +1,96 @@
-.calculator{
-    width: 500px;
-    height: 700px;
-    background-color: darkblue;
-    border-radius: 35px;
-    outline: 5px solid darkblue;
-    margin: 90px auto;
+.calculator {
+  max-width: 500px;
+  height: 700px;
+  background-color: darkblue;
+  border-radius: 35px;
+  outline: 5px solid darkblue;
+  margin: 90px auto;
 }
-input{
-    margin-left: 42.5px;
-    margin-top: 40px;
-    padding: 20px 10px;
-    outline: 5px solid darkblue;
-    font-size: 32px;
+input {
+  margin-left: 42.5px;
+  margin-top: 40px;
+  padding: 20px 10px;
+  outline: 5px solid darkblue;
+  font-size: 32px;
 }
-.buttons{
-    width: 440px;
-    height: 550px;
-    margin-left: 40px;
-    margin-top: 30px;
+.buttons {
+  width: 440px;
+  height: 550px;
+  margin-left: 40px;
+  margin-top: 30px;
 }
-button{
-    width: 100px;
-    height: 100px;
-    margin-left: 2px;
-    margin-top: 5px;
-    font-size: 32px;
-    background-color: lightblue;
-    outline: 2px solid green;
-    border-radius: 25px;
+button {
+  width: 100px;
+  height: 100px;
+  margin-left: 2px;
+  margin-top: 5px;
+  font-size: 32px;
+  background-color: lightblue;
+  outline: 2px solid green;
+  border-radius: 25px;
 }
-.button:active{
-    border: 7px solid red;
+.developer {
+  text-align: center;
+  font-size: 26px;
+  opacity: 0.5;
 }
-.imp{
-    background-color: red;
-    outline: 2px solid orange;
+.button:active {
+  border: 7px solid red;
 }
-.end{
-    background-color: green;
-    outline: 2px solid orange;
-    border-radius:0px;  
+.imp {
+  background-color: red;
+  outline: 2px solid orange;
 }
-.end:active{
-border-radius: 50%;
-border: none;
+.end {
+  background-color: green;
+  outline: 2px solid orange;
+  border-radius: 0px;
 }
-.del{
-    background-color: yellow;
-    outline: 2px solid orange;
+.end:active {
+  border-radius: 50%;
+  border: none;
 }
-.oper{
-    background-color: rgb(168, 168, 245);
-    outline: 2px solid orange;
+.del {
+  background-color: yellow;
+  outline: 2px solid orange;
 }
-@media (max-width:360px){
- body{
+.oper {
+  background-color: rgb(168, 168, 245);
+  outline: 2px solid orange;
+}
+@media (max-width: 450px) {
+  body {
+    overflow-y: hidden;
+    background-color: black;
+  }
+  .calculator {
+    margin-top: 80px;
+    max-width: 375px;
+    height: 600px;
     overflow: hidden;
- }
- .calculator{
-    margin-top: -20px;
- }
+  }
+  .developer > p {
+    text-align: center;
+    color: white;
+  }
+  .buttons {
+    margin-left: -3px;
+  }
+  .button {
+    width: 75px;
+    height: 75px;
+  }
+  input {
+    margin-left: 5px;
+    width: 330px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 505px) {
+  .button {
+    width: 90px;
+  }
+  input {
+    width: 350px;
+  }
 }
